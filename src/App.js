@@ -4,9 +4,11 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  
 } from "react-router-dom";
 import Home from "./component/Home/Home/Home";
+import Appointment from "./component/Appointment/Appoinetment/Appointment";
+import Dashboard from "./component/Dashboard/Dashboard/Dashboard";
 
 function App() {
   return (
@@ -14,6 +16,12 @@ function App() {
       <Switch>
         <Route exact path ="/">
           <Home></Home>
+        </Route>
+        <Route path= "/appointment">
+          <Appointment></Appointment>
+        </Route>
+        <Route path= "/dashboard/appointment">
+          <Dashboard></Dashboard>
         </Route>
       </Switch>
     </Router>
